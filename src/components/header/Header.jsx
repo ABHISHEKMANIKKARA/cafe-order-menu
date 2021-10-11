@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import allActions from "../../actions";
 function Header() {
   const cartCount = useSelector((state) => state.cart);
-  const dispatch = useDispatch();
+
   return (
     <div>
       <div className="row header">

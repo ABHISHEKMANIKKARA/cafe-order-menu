@@ -1,7 +1,10 @@
 import "./TabContent.css";
 import { useSelector, useDispatch } from "react-redux";
 import allActions from "../../actions";
+
 function TabContent() {
+
+
   const category = useSelector((state) => state.menus.menus);
   const dispatch = useDispatch();
 
@@ -12,10 +15,12 @@ function TabContent() {
   }
 
   function decreementQuantity(item, index) {
+
     let count = item.count ? item.count : 0;
     category[index] = { ...item, count: count - 1 };
     dispatch(allActions.setMenu([...category]));
     dispatch(allActions.setCart("remove"));
+    
   }
 
   return (

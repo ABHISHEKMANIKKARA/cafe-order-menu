@@ -18,7 +18,7 @@ function NavTab() {
   }
 
   useEffect(() => {
-    console.log("hii");
+    
     fetch("https://run.mocky.io/v3/a67edc87-49c7-4822-9cb4-e2ef94cb3099")
       .then((data) => data.json())
       .then((result) => {
@@ -33,12 +33,11 @@ function NavTab() {
             dish < table_menu_list[menu].category_dishes.length;
             dish++
           ) {
-            // console.log(table_menu_list[menu].category_dishes[dish],"hii")
+            
             table_menu_list[menu].category_dishes[dish].count = 0;
           }
         }
-        console.log("table");
-        console.log(table_menu_list);
+       
         setCategory(result[0].table_menu_list);
         dispatch(
           allActions.setMenu(result[0].table_menu_list[0].category_dishes)
