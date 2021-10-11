@@ -16,11 +16,13 @@ function TabContent() {
 
   function decreementQuantity(item, index) {
 
-    let count = item.count ? item.count : 0;
-    category[index] = { ...item, count: count - 1 };
-    dispatch(allActions.setMenu([...category]));
-    dispatch(allActions.setCart("remove"));
-    
+    if(category[index].count>0)
+    {
+        category[index].count = category[index].count-1;
+        dispatch(allActions.setMenu([...category]));
+        dispatch(allActions.setCart("remove"));
+    }
+
   }
 
   return (
