@@ -27,13 +27,13 @@ function TabContent() {
 
   return (
     <div>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           {category
             ? category.map((item, index) => (
                 <div className="col-12 menu-detail">
                   <div className="row">
-                    <div className="col-9">
+                    <div className=" col-9 col-md-10">
                       <div className="row">
                         <div className="col-12 dish-name">
                           <span className="veg-icon">
@@ -42,18 +42,18 @@ function TabContent() {
                           {item.dish_name}
                         </div>
 
-                        <div className="col-6 price">
+                        <div className="col-6 col-md-9 price">
                           {item.dish_price}
                           <span>{` ${item.dish_currency}`}</span>
                         </div>
-                        <div className="col-6 calories">
+                        <div className=" col-6 col-md-3 calories">
                           {`${item.dish_calories} calories`}
                         </div>
                         <div className="col-12 menu-description">
                           {item.dish_description}
                         </div>
-                        <div className="col-12">
-                          <div class="quantity">
+                       <div className="col-12">
+                       {item.dish_Availability?<div class="quantity">
                             <button
                               type="button"
                               onClick={() => {
@@ -78,7 +78,7 @@ function TabContent() {
                             >
                               +
                             </button>
-                          </div>
+                          </div>:<div className="not-available">Not Available</div>}
                         </div>
                         {item.addonCat.length ? (
                           <div className="col-12 customization">
@@ -89,7 +89,7 @@ function TabContent() {
                         )}
                       </div>
                     </div>
-                    <div className="col-3">
+                    <div className=" col-3 col-md-2">
                       <img className="dish-image" src={item.dish_image} />
                     </div>
                   </div>

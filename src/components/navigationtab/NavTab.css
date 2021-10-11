@@ -3,16 +3,25 @@
     overflow-x: auto;
     font-size: 1rem;
     white-space: nowrap;
+    text-align: center;
+    border-bottom: 0.1rem solid rgb(236, 233, 233);
 }
-.menu-tab>div{
+.menu-tab>.menu{
     padding-left: 1rem;
     display: inline-block;
-    border-bottom: 3px solid rgb(236, 233, 233);
+  
 }
 .menu-tab::-webkit-scrollbar {
     display: none;
 }  
 .category{
-    border-bottom: 3px solid red;
+    border-bottom: 0.2rem solid red;
+    padding-bottom: 0.7rem;
     color: red;
 } 
+.menu{
+    text-align: center;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
+
+}

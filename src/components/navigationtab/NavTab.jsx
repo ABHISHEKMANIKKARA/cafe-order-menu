@@ -57,7 +57,7 @@ function NavTab() {
                     setSelected(item, index);
                   }}
                 >
-                  {item.menu_category}
+                  <div className="menu">{item.menu_category}</div>
                 </a>
               </div>
             ))
