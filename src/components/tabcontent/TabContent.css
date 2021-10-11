@@ -1,0 +1,65 @@
+.menu-detail{
+    border-bottom:2px solid rgb(187, 184, 184);
+    padding-bottom: 1rem;
+}
+.dish-name{
+    font-color:black;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+    
+}
+.calories,.price{
+    font-color:black;
+    font-weight: 500;
+    margin-top: 0.6rem;
+}
+.veg-icon>img{
+    height:1.8rem;
+    width:1.8rem;
+}
+.menu-description{
+    color:rgb(189, 188, 188);
+    margin-top: 0.8rem;
+}
+.dish-image{
+    height:8rem;
+    width:8rem;
+    margin-top: 0.6rem;
+}
+.quantity
+{
+    display:flex;
+    margin-top: 1rem;
+}
+.quantity button{
+    width:4rem;
+    height:2.2rem;
+    background-color:rgb(67, 168, 67);
+    color:white; 
+}
+.minus{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.plus{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.count,textarea{
+    background-color:rgb(67, 168, 67); 
+    border-style: hidden;
+    color:white;
+    text-align: center;
+    width:3rem;
+    height:2.2rem;
+}
+textarea:focus,input:focus{
+    outline: none;
+}
+.customization{
+    color:red;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+}
+

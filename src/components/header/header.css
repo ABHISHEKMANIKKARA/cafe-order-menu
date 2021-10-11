@@ -1,0 +1,38 @@
+.header{
+    width:100%;
+    height:10vh;
+}
+.restaurant-name{
+    padding-top:1.5rem;
+    font-size: 1.5rem;
+    color: rgb(214, 211, 211);
+}
+.backbutton{
+    padding-top:1.5rem;  
+}
+.orders{
+    position:relative;
+    padding-top:1.5rem;
+    font-size: 1.2rem;
+}
+
+.cart-basket{
+    position:relative;
+   
+}
+.cart-basket-count{
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    height:1.2rem;
+    width:1.1rem;
+    background-color: red;
+    border-radius: 50%;
+    color:white;
+    text-align: center;
+    font-size: 0.6rem;
+    }
+.fa-shopping-cart{
+        height:2rem;
+        width:2rem; 
+    }
