@@ -4,6 +4,7 @@ import allActions from "../../actions";
 import { useSelector, useDispatch } from "react-redux";
 import TabContent from "../tabcontent/TabContent";
 
+
 function NavTab() {
   let [category, setCategory] = useState();
   let [latestSelected, setLatestSelected] = useState(0);
@@ -43,16 +44,17 @@ function NavTab() {
           allActions.setMenu(result[0].table_menu_list[0].category_dishes)
         );
       });
+
   }, []);
 
   return (
     <div>
-      <div className=" menu-tab">
+        <div className="sample">
+      <div className={window.innerWidth>510?"menu-tab":"menu-tab-phone"}>
         {category
           ? category.map((item, index) => (
-              <div className={item.menu_selected ? "category" : ""}>
+              <div className={item.menu_selected ? "selected-category" : "category"}>
                 <a
-                  className={item.menu_selected ? "category" : ""}
                   onClick={() => {
                     setSelected(item, index);
                   }}
@@ -62,6 +64,7 @@ function NavTab() {
               </div>
             ))
           : ""}
+      </div>
       </div>
       <TabContent />
     </div>

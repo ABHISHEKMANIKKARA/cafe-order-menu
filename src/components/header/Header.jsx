@@ -5,13 +5,12 @@ function Header() {
   const cartCount = useSelector((state) => state.cart);
 
   return (
-    <div>
+    <div className="container-fluid">
       <div className="row header">
-        <div className="backbutton col-2"><a ><img style={{filter: "opacity(0.5) drop-shadow(0 0 0 lightgrey)"}} src="https://img.icons8.com/material-outlined/24/000000/left.png"/></a></div>  
-        <div className="col-6 col-md-8 restaurant-name">
-          <div>UNI Resto Cafe</div>
+        <div className="col-10 col-md-11 restaurant-name">
+          <div><span><a ><img style={{filter: "opacity(0.5) drop-shadow(0 0 0 lightgrey)"}} src="https://img.icons8.com/material-outlined/24/000000/left.png"/></a></span> &nbsp;UNI Resto Cafe</div>
         </div>
-        <div className="col-4 col-md-2 orders">
+        <div className="col-2 col-md-1 orders">
           <div>
             My Orders
             <span className="cart-basket">

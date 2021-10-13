@@ -26,7 +26,6 @@ function TabContent() {
   }
 
   return (
-    <div>
       <div className="container-fluid">
         <div className="row">
           {category
@@ -36,9 +35,10 @@ function TabContent() {
                     <div className=" col-9 col-md-10">
                       <div className="row">
                         <div className="col-12 dish-name">
-                          <span className="veg-icon">
-                            <img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" />
-                          </span>
+                          <span className="dish-icon">
+                            {item.dish_Type==2?<img src="https://img.icons8.com/color/48/000000/vegetarian-food-symbol.png" />:
+                            <img src="https://img.icons8.com/color/48/000000/non-vegetarian-food-symbol.png"/>}
+                          </span>&nbsp;
                           {item.dish_name}
                         </div>
 
@@ -89,8 +89,8 @@ function TabContent() {
                         )}
                       </div>
                     </div>
-                    <div className=" col-3 col-md-2">
-                      <img className="dish-image" src={item.dish_image} />
+                    <div className=" col-3 col-md-2 dish-image">
+                      <img  src={item.dish_image} />
                     </div>
                   </div>
                 </div>
@@ -98,7 +98,7 @@ function TabContent() {
             : ""}
         </div>
       </div>
-    </div>
+    
   );
 }
 

@@ -14,6 +14,9 @@
     position:relative;
     padding-top:1.5rem;
     font-size: 1.2rem;
+    display: inline-block;
+    white-space: nowrap;
+   
 }
 
 .cart-basket{
